@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanchard</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="container header__container"> 
+        <button class="header__menu"> <span> </span><span> </span><span> </span></button><a class="header__logo" href="#">
+          <svg> 
+            <use xlink:href="img/sprite.svg#header--logo"></use>
+          </svg></a>
+        <nav class="header__nav nav"> 
+          <ul class="nav__list"> 
+            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Галерея</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">События</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Издания</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Проекты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav><a class="header__profile" href="#">
+          <svg> 
+            <use xlink:href="img/sprite.svg#header--entry"></use>
+          </svg>Войти</a>
+        <button class="header__search"> 
+          <svg> 
+            <use xlink:href="img/sprite.svg#header--search"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero__topbar">
+        <div class="container hero__topbar__container">
+          <button class="hero__topbar__btn hero__btn" id="heroBtn1" onclick="toggleHeroBtn1()"> Реализм
+            <div class="hero__dropdown">
+              <div class="hero__list" data-simplebar>
+                <div class="hero__item hb-1-1">
+                  <h3 class="hero__heading">Тинторетто</h3>
+                </div>
+                <div class="hero__item hb-1-2">
+                  <h3 class="hero__heading">Фридрих</h3>
+                </div>
+                <div class="hero__item hb-1-3">
+                  <h3 class="hero__heading">Леонардо</h3>
+                </div>
+                <div class="hero__item hb-1-4">
+                  <h3 class="hero__heading">Верроккьо</h3>
+                </div>
+                <div class="hero__item hb-1-1">
+                  <h3 class="hero__heading">Тинторетто</h3>
+                </div>
+                <div class="hero__item hb-1-2">
+                  <h3 class="hero__heading">Фридрих</h3>
+                </div>
+                <div class="hero__item hb-1-3">
+                  <h3 class="hero__heading">Леонардо</h3>
+                </div>
+                <div class="hero__item hb-1-4">
+                  <h3 class="hero__heading">Верроккьо</h3>
+                </div>
+              </div>
+            </div>
+          </button>
+          <button class="hero__topbar__btn hero__btn" id="heroBtn2" onclick="toggleHeroBtn2()"> Импрессионизм
+            <div class="hero__dropdown">
+              <div class="hero__list" data-simplebar>
+                <div class="hero__item hb-2-1">
+                  <h3 class="hero__heading">Моне</h3>
+                </div>
+                <div class="hero__item hb-2-2">
+                  <h3 class="hero__heading">Сислей</h3>
+                </div>
+                <div class="hero__item hb-2-3">
+                  <h3 class="hero__heading">Мане</h3>
+                </div>
+                <div class="hero__item hb-2-4">
+                  <h3 class="hero__heading">Ренуар</h3>
+                </div>
+                <div class="hero__item hb-2-1">
+                  <h3 class="hero__heading">Моне</h3>
+                </div>
+                <div class="hero__item hb-2-2">
+                  <h3 class="hero__heading">Сислей</h3>
+                </div>
+                <div class="hero__item hb-2-3">
+                  <h3 class="hero__heading">Мане</h3>
+                </div>
+                <div class="hero__item hb-2-4">
+                  <h3 class="hero__heading">Ренуар</h3>
+                </div>
+              </div>
+            </div>
+            <button class="hero__topbar__btn hero__btn" id="heroBtn3" onclick="toggleHeroBtn3()"> Постимпрессионизм
+              <div class="hero__dropdown">
+                <div class="hero__list" data-simplebar>
+                  <div class="hero__item hb-3-1">
+                    <h3 class="hero__heading">Ван Гог</h3>
+                  </div>
+                  <div class="hero__item hb-3-2">
+                    <h3 class="hero__heading">Сезанн</h3>
+                  </div>
+                  <div class="hero__item hb-3-3">
+                    <h3 class="hero__heading">Гоген</h3>
+                  </div>
+                  <div class="hero__item hb-3-4">
+                    <h3 class="hero__heading">Сёра</h3>
+                  </div>
+                  <div class="hero__item hb-3-1">
+                    <h3 class="hero__heading">Ван Гог</h3>
+                  </div>
+                  <div class="hero__item hb-3-2">
+                    <h3 class="hero__heading">Сезанн</h3>
+                  </div>
+                  <div class="hero__item hb-3-3">
+                    <h3 class="hero__heading">Гоген</h3>
+                  </div>
+                  <div class="hero__item hb-3-4">
+                    <h3 class="hero__heading">Сёра</h3>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button class="hero__topbar__btn hero__btn" id="heroBtn4" onclick="toggleHeroBtn4()"> Авангард
+              <div class="hero__dropdown">
+                <div class="hero__list" data-simplebar>
+                  <div class="hero__item hb-4-1">
+                    <h3 class="hero__heading">Кандинский</h3>
+                  </div>
+                  <div class="hero__item hb-4-2">
+                    <h3 class="hero__heading">Маринетти</h3>
+                  </div>
+                  <div class="hero__item hb-4-3">
+                    <h3 class="hero__heading">Малевич</h3>
+                  </div>
+                  <div class="hero__item hb-4-4">
+                    <h3 class="hero__heading">Пикассо</h3>
+                  </div>
+                  <div class="hero__item hb-4-1">
+                    <h3 class="hero__heading">Кандинский</h3>
+                  </div>
+                  <div class="hero__item hb-4-2">
+                    <h3 class="hero__heading">Маринетти</h3>
+                  </div>
+                  <div class="hero__item hb-4-3">
+                    <h3 class="hero__heading">Малевич</h3>
+                  </div>
+                  <div class="hero__item hb-4-4">
+                    <h3 class="hero__heading">Пикассо</h3>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button class="hero__topbar__btn hero__btn" id="heroBtn5" onclick="toggleHeroBtn5()"> Футуризм
+              <div class="hero__dropdown">
+                <div class="hero__list" data-simplebar>
+                  <div class="hero__item hb-5-1">
+                    <h3 class="hero__heading">Карра</h3>
+                  </div>
+                  <div class="hero__item hb-5-2">
+                    <h3 class="hero__heading">Прателла</h3>
+                  </div>
+                  <div class="hero__item hb-5-3">
+                    <h3 class="hero__heading">Северини</h3>
+                  </div>
+                  <div class="hero__item hb-5-4">
+                    <h3 class="hero__heading">Балла</h3>
+                  </div>
+                  <div class="hero__item hb-5-1">
+                    <h3 class="hero__heading">Карра</h3>
+                  </div>
+                  <div class="hero__item hb-5-2">
+                    <h3 class="hero__heading">Прателла</h3>
+                  </div>
+                  <div class="hero__item hb-5-3">
+                    <h3 class="hero__heading">Северини</h3>
+                  </div>
+                  <div class="hero__item hb-5-4">
+                    <h3 class="hero__heading">Балла</h3>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <label class="hero__topbar__search" for="heroInput"> 
+              <button class="hero__topbar__btn" type="sumbit">
+                <svg> 
+                  <use xlink:href="img/sprite.svg#hero--search"></use>
+                </svg>
+              </button>
+              <input class="hero__topbar__input" id="heroInput" type="search" placeholder="Поиск по сайту">
+            </label>
+          </button>
+        </div>
+      </div>
+      <div class="container hero__container">
+        <div class="swiper-container hero__swiper-container"> 
+          <div class="swiper-wrapper hero__swiper-wrapper">
+            <div class="swiper-slide hero__swiper-slide">
+              <div class="hero__swiper-img sb-1"></div>
+            </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <div class="hero__swiper-img sb-2"></div>
+            </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <div class="hero__swiper-img sb-3"></div>
+            </div>
+          </div>
+        </div>
+        <h1 class="hero__main-heading">Прикоснитесь к прекрасному</h1>
+        <p class="hero__desc">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p><a class="hero__main-btn" href="#">Подписаться на рассылку</a>
+      </div>
+    </section>
+    <section class="about-us" id="about-us"> 
+      <div class="container about-us__container">
+        <h2 class="about-us__heading heading">О нас</h2>
+        <p class="about-us__desc desc">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="gallery" id="gallery"> 
+      <div class="container gallery__container"> 
+        <div class="gallery__left-group">
+          <h2 class="gallery__heading heading">Галерея</h2><span class="gallery__filter">Фильтр:</span>
+          <select class="gallery__select">
+            <option class="gallery__option" value="">Живопись </option>
+            <option class="gallery__option" value="">Рисунок </option>
+            <option class="gallery__option" value="">Скульптура </option>
+          </select>
+          <p class="gallery__desc desc">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь, </a>либо воспользуйтесь лицензией.</p>
+        </div>
+        <div class="gallery__right-group">
+          <div class="swiper-container gallery__swiper-container"> 
+            <div class="swiper-wrapper gallery__swiper-wrapper">
+              <div class="swiper-slide gallery__swiper-slide gb-1"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-2"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-3"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-4"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-5"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-6"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-7"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-8"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-9"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-10"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-11"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-12"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-13"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-14"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-15"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-16"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-17"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-18"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-19"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-20"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-21"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-22"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-23"></div>
+              <div class="swiper-slide gallery__swiper-slide gb-24"></div>
+            </div>
+          </div>
+          <div class="swiper-button-prev gallery__swiper-button-prev"></div>
+          <div class="gallery__swiper__count">1 / 2</div>
+          <div class="swiper-button-next gallery__swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog" id="catalog"> 
+      <div class="container catalog__container"> 
+        <div class="catalog__top">
+          <h2 class="catalog__heading heading">Каталог</h2>
+          <ul class="catalog__lang__list"> 
+            <li class="catalog__lang__item is_active" data-lang="fr"></li>
+            <li class="catalog__lang__item" data-lang="gr"></li>
+            <li class="catalog__lang__item" data-lang="it"></li>
+            <li class="catalog__lang__item" data-lang="ru"></li>
+            <li class="catalog__lang__item" data-lang="bg"></li>
+          </ul>
+          <p class="catalog__desc desc">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+        </div>
+        <div class="catalog__lang-content"> 
+          <div class="catolog__lang-content__item is_active" data-lang-target="fr">
+            <div class="catalog__lang-content__item__left is_active" data-accordion-target="Бенедетто ди Биндо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Бенедетто ди Биндо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Биссоло, Франческо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Биссоло, Франческо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Больтраффио, Джованни">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Больтраффио, Джованни</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Бонсиньори, Франческо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Бонсиньори, Франческо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Боттичини, Рафаэлло">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Боттичини, Рафаэлло</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Брамантино">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Брамантино</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Бреа, Людовико">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Бреа, Людовико</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Бьяджо д’Антонио Туччи">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Бьяджо д’Антонио Туччи</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Веккьетта">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Веккьетта</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Андреа Верроккьо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Андреа Верроккьо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Доменико Гирландайо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Доменико Гирландайо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Беноццо Гоццоли">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Беноццо Гоццоли</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Граначчи, Франческо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Граначчи, Франческо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Грегорио ди Чекко">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Грегорио ди Чекко</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Джованни да Удине">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Джованни да Удине</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Джованни ди Паоло">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Джованни ди Паоло</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Джорджоне">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Джорджоне</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Парентино, Бернардо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Парентино, Бернардо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Пезеллино">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Пезеллино</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Пьетро Перуджино">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Пьетро Перуджино</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Перуцци, Бальдассаре">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Перуцци, Бальдассаре</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Пизанелло">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Пизанелло</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Пинтуриккьо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Пинтуриккьо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__left" data-accordion-target="Бергоньоне, Амброджо">
+              <div class="catalog__lang-content__item__left__img"></div>
+              <h3 class="catalog__lang-content__item__left__heading">Бергоньоне, Амброджо</h3>
+              <p class="catalog__lang-content__item__left__desc"><span class="catalog__lang-content__item__left__desc__date">2 июня 1448 — 11 января 1494.</span>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog__lang-content__item__right">
+              <div class="catalog__lang-content__item__right__accordion" id="catalogAccordion"> 
+                <h3 class="catalog__accordion__heading"> C 1400 по 1499 гг.</h3>
+                <div class="catalog__accordion__arts">
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бенедетто ди Биндо</button>
+                  <button class="catalog__accordion__art" data-accordion="Биссоло, Франческо">Биссоло, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Больтраффио, Джованни">Больтраффио, Джованни</button>
+                  <button class="catalog__accordion__art" data-accordion="Бонсиньори, Франческо">Бонсиньори, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Боттичини, Рафаэлло">Боттичини, Рафаэлло</button>
+                  <button class="catalog__accordion__art" data-accordion="Брамантино">Брамантино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бреа, Людовико">Бреа, Людовико</button>
+                  <button class="catalog__accordion__art" data-accordion="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</button>
+                  <button class="catalog__accordion__art" data-accordion="Веккьетта">Веккьетта</button>
+                  <button class="catalog__accordion__art" data-accordion="Андреа Верроккьо">Андреа Верроккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Доменико Гирландайо">Доменико Гирландайо</button>
+                  <button class="catalog__accordion__art" data-accordion="Беноццо Гоццоли">Беноццо Гоццоли</button>
+                  <button class="catalog__accordion__art" data-accordion="Граначчи, Франческо">Граначчи, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Грегорио ди Чекко">Грегорио ди Чекко</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни да Удине">Джованни да Удине</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни ди Паоло">Джованни ди Паоло</button>
+                  <button class="catalog__accordion__art" data-accordion="Джорджоне">Джорджоне</button>
+                  <button class="catalog__accordion__art" data-accordion="Парентино, Бернардо">Парентино, Бернардо</button>
+                  <button class="catalog__accordion__art" data-accordion="Пезеллино">Пезеллино</button>
+                  <button class="catalog__accordion__art" data-accordion="Пьетро Перуджино">Пьетро Перуджино</button>
+                  <button class="catalog__accordion__art" data-accordion="Перуцци, Бальдассаре">Перуцци, Бальдассаре</button>
+                  <button class="catalog__accordion__art" data-accordion="Пизанелло">Пизанелло</button>
+                  <button class="catalog__accordion__art" data-accordion="Пинтуриккьо">Пинтуриккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бергоньоне, Амброджо">Бергоньоне, Амброджо</button>
+                </div>
+                <h3 class="catalog__accordion__heading"> C 1500 по 1599 гг.</h3>
+                <div class="catalog__accordion__arts">
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бенедетто ди Биндо</button>
+                  <button class="catalog__accordion__art" data-accordion="Биссоло, Франческо">Биссоло, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Больтраффио, Джованни">Больтраффио, Джованни</button>
+                  <button class="catalog__accordion__art" data-accordion="Бонсиньори, Франческо">Бонсиньори, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Боттичини, Рафаэлло">Боттичини, Рафаэлло</button>
+                  <button class="catalog__accordion__art" data-accordion="Брамантино">Брамантино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бреа, Людовико">Бреа, Людовико</button>
+                  <button class="catalog__accordion__art" data-accordion="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</button>
+                  <button class="catalog__accordion__art" data-accordion="Веккьетта">Веккьетта</button>
+                  <button class="catalog__accordion__art" data-accordion="Андреа Верроккьо">Андреа Верроккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Доменико Гирландайо">Доменико Гирландайо</button>
+                  <button class="catalog__accordion__art" data-accordion="Беноццо Гоццоли">Беноццо Гоццоли</button>
+                  <button class="catalog__accordion__art" data-accordion="Граначчи, Франческо">Граначчи, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Грегорио ди Чекко">Грегорио ди Чекко</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни да Удине">Джованни да Удине</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни ди Паоло">Джованни ди Паоло</button>
+                  <button class="catalog__accordion__art" data-accordion="Джорджоне">Джорджоне</button>
+                  <button class="catalog__accordion__art" data-accordion="Парентино, Бернардо">Парентино, Бернардо</button>
+                  <button class="catalog__accordion__art" data-accordion="Пезеллино">Пезеллино</button>
+                  <button class="catalog__accordion__art" data-accordion="Пьетро Перуджино">Пьетро Перуджино</button>
+                  <button class="catalog__accordion__art" data-accordion="Перуцци, Бальдассаре">Перуцци, Бальдассаре</button>
+                  <button class="catalog__accordion__art" data-accordion="Пизанелло">Пизанелло</button>
+                  <button class="catalog__accordion__art" data-accordion="Пинтуриккьо">Пинтуриккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бергоньоне, Амброджо">Бергоньоне, Амброджо</button>
+                </div>
+                <h3 class="catalog__accordion__heading"> C 1600 по 1699 гг.</h3>
+                <div class="catalog__accordion__arts">
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бенедетто ди Биндо</button>
+                  <button class="catalog__accordion__art" data-accordion="Биссоло, Франческо">Биссоло, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Больтраффио, Джованни">Больтраффио, Джованни</button>
+                  <button class="catalog__accordion__art" data-accordion="Бонсиньори, Франческо">Бонсиньори, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Боттичини, Рафаэлло">Боттичини, Рафаэлло</button>
+                  <button class="catalog__accordion__art" data-accordion="Брамантино">Брамантино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бреа, Людовико">Бреа, Людовико</button>
+                  <button class="catalog__accordion__art" data-accordion="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</button>
+                  <button class="catalog__accordion__art" data-accordion="Веккьетта">Веккьетта</button>
+                  <button class="catalog__accordion__art" data-accordion="Андреа Верроккьо">Андреа Верроккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Доменико Гирландайо">Доменико Гирландайо</button>
+                  <button class="catalog__accordion__art" data-accordion="Беноццо Гоццоли">Беноццо Гоццоли</button>
+                  <button class="catalog__accordion__art" data-accordion="Граначчи, Франческо">Граначчи, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Грегорио ди Чекко">Грегорио ди Чекко</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни да Удине">Джованни да Удине</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни ди Паоло">Джованни ди Паоло</button>
+                  <button class="catalog__accordion__art" data-accordion="Джорджоне">Джорджоне</button>
+                  <button class="catalog__accordion__art" data-accordion="Парентино, Бернардо">Парентино, Бернардо</button>
+                  <button class="catalog__accordion__art" data-accordion="Пезеллино">Пезеллино</button>
+                  <button class="catalog__accordion__art" data-accordion="Пьетро Перуджино">Пьетро Перуджино</button>
+                  <button class="catalog__accordion__art" data-accordion="Перуцци, Бальдассаре">Перуцци, Бальдассаре</button>
+                  <button class="catalog__accordion__art" data-accordion="Пизанелло">Пизанелло</button>
+                  <button class="catalog__accordion__art" data-accordion="Пинтуриккьо">Пинтуриккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бергоньоне, Амброджо">Бергоньоне, Амброджо</button>
+                </div>
+                <h3 class="catalog__accordion__heading"> C 1700 по 1799 гг.</h3>
+                <div class="catalog__accordion__arts">
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бенедетто ди Биндо</button>
+                  <button class="catalog__accordion__art" data-accordion="Биссоло, Франческо">Биссоло, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Больтраффио, Джованни">Больтраффио, Джованни</button>
+                  <button class="catalog__accordion__art" data-accordion="Бонсиньори, Франческо">Бонсиньори, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Боттичини, Рафаэлло">Боттичини, Рафаэлло</button>
+                  <button class="catalog__accordion__art" data-accordion="Брамантино">Брамантино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бреа, Людовико">Бреа, Людовико</button>
+                  <button class="catalog__accordion__art" data-accordion="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</button>
+                  <button class="catalog__accordion__art" data-accordion="Веккьетта">Веккьетта</button>
+                  <button class="catalog__accordion__art" data-accordion="Андреа Верроккьо">Андреа Верроккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Доменико Гирландайо">Доменико Гирландайо</button>
+                  <button class="catalog__accordion__art" data-accordion="Беноццо Гоццоли">Беноццо Гоццоли</button>
+                  <button class="catalog__accordion__art" data-accordion="Граначчи, Франческо">Граначчи, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Грегорио ди Чекко">Грегорио ди Чекко</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни да Удине">Джованни да Удине</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни ди Паоло">Джованни ди Паоло</button>
+                  <button class="catalog__accordion__art" data-accordion="Джорджоне">Джорджоне</button>
+                  <button class="catalog__accordion__art" data-accordion="Парентино, Бернардо">Парентино, Бернардо</button>
+                  <button class="catalog__accordion__art" data-accordion="Пезеллино">Пезеллино</button>
+                  <button class="catalog__accordion__art" data-accordion="Пьетро Перуджино">Пьетро Перуджино</button>
+                  <button class="catalog__accordion__art" data-accordion="Перуцци, Бальдассаре">Перуцци, Бальдассаре</button>
+                  <button class="catalog__accordion__art" data-accordion="Пизанелло">Пизанелло</button>
+                  <button class="catalog__accordion__art" data-accordion="Пинтуриккьо">Пинтуриккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бергоньоне, Амброджо">Бергоньоне, Амброджо</button>
+                </div>
+                <h3 class="catalog__accordion__heading"> C 1800 по 1899 гг.</h3>
+                <div class="catalog__accordion__arts">
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бенедетто ди Биндо</button>
+                  <button class="catalog__accordion__art" data-accordion="Биссоло, Франческо">Биссоло, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Больтраффио, Джованни">Больтраффио, Джованни</button>
+                  <button class="catalog__accordion__art" data-accordion="Бонсиньори, Франческо">Бонсиньори, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Боттичини, Рафаэлло">Боттичини, Рафаэлло</button>
+                  <button class="catalog__accordion__art" data-accordion="Брамантино">Брамантино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бреа, Людовико">Бреа, Людовико</button>
+                  <button class="catalog__accordion__art" data-accordion="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</button>
+                  <button class="catalog__accordion__art" data-accordion="Веккьетта">Веккьетта</button>
+                  <button class="catalog__accordion__art" data-accordion="Андреа Верроккьо">Андреа Верроккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Доменико Гирландайо">Доменико Гирландайо</button>
+                  <button class="catalog__accordion__art" data-accordion="Беноццо Гоццоли">Беноццо Гоццоли</button>
+                  <button class="catalog__accordion__art" data-accordion="Граначчи, Франческо">Граначчи, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Грегорио ди Чекко">Грегорио ди Чекко</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни да Удине">Джованни да Удине</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни ди Паоло">Джованни ди Паоло</button>
+                  <button class="catalog__accordion__art" data-accordion="Джорджоне">Джорджоне</button>
+                  <button class="catalog__accordion__art" data-accordion="Парентино, Бернардо">Парентино, Бернардо</button>
+                  <button class="catalog__accordion__art" data-accordion="Пезеллино">Пезеллино</button>
+                  <button class="catalog__accordion__art" data-accordion="Пьетро Перуджино">Пьетро Перуджино</button>
+                  <button class="catalog__accordion__art" data-accordion="Перуцци, Бальдассаре">Перуцци, Бальдассаре</button>
+                  <button class="catalog__accordion__art" data-accordion="Пизанелло">Пизанелло</button>
+                  <button class="catalog__accordion__art" data-accordion="Пинтуриккьо">Пинтуриккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бергоньоне, Амброджо">Бергоньоне, Амброджо</button>
+                </div>
+                <h3 class="catalog__accordion__heading"> C 1900 по 1999 гг.</h3>
+                <div class="catalog__accordion__arts">
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бенедетто ди Биндо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Биссоло, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Больтраффио, Джованни</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бонсиньори, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Боттичини, Рафаэлло</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Брамантино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бреа, Людовико</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бьяджо д’Антонио Туччи</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Веккьетта</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Андреа Верроккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Доменико Гирландайо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Беноццо Гоццоли</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Граначчи, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Грегорио ди Чекко</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Джованни да Удине</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Джованни ди Паоло</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Джорджоне</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Парентино, Бернардо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Пезеллино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Пьетро Перуджино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Перуцци, Бальдассаре</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Пизанелло</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Пинтуриккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бергоньоне, Амброджо</button>
+                </div>
+                <h3 class="catalog__accordion__heading"> C 2000 г.</h3>
+                <div class="catalog__accordion__arts">
+                  <button class="catalog__accordion__art" data-accordion="Бенедетто ди Биндо">Бенедетто ди Биндо</button>
+                  <button class="catalog__accordion__art" data-accordion="Биссоло, Франческо">Биссоло, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Больтраффио, Джованни">Больтраффио, Джованни</button>
+                  <button class="catalog__accordion__art" data-accordion="Бонсиньори, Франческо">Бонсиньори, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Боттичини, Рафаэлло">Боттичини, Рафаэлло</button>
+                  <button class="catalog__accordion__art" data-accordion="Брамантино">Брамантино</button>
+                  <button class="catalog__accordion__art" data-accordion="Бреа, Людовико">Бреа, Людовико</button>
+                  <button class="catalog__accordion__art" data-accordion="Бьяджо д’Антонио Туччи">Бьяджо д’Антонио Туччи</button>
+                  <button class="catalog__accordion__art" data-accordion="Веккьетта">Веккьетта</button>
+                  <button class="catalog__accordion__art" data-accordion="Андреа Верроккьо">Андреа Верроккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Доменико Гирландайо">Доменико Гирландайо</button>
+                  <button class="catalog__accordion__art" data-accordion="Беноццо Гоццоли">Беноццо Гоццоли</button>
+                  <button class="catalog__accordion__art" data-accordion="Граначчи, Франческо">Граначчи, Франческо</button>
+                  <button class="catalog__accordion__art" data-accordion="Грегорио ди Чекко">Грегорио ди Чекко</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни да Удине">Джованни да Удине</button>
+                  <button class="catalog__accordion__art" data-accordion="Джованни ди Паоло">Джованни ди Паоло</button>
+                  <button class="catalog__accordion__art" data-accordion="Джорджоне">Джорджоне</button>
+                  <button class="catalog__accordion__art" data-accordion="Парентино, Бернардо">Парентино, Бернардо</button>
+                  <button class="catalog__accordion__art" data-accordion="Пезеллино">Пезеллино</button>
+                  <button class="catalog__accordion__art" data-accordion="Пьетро Перуджино">Пьетро Перуджино</button>
+                  <button class="catalog__accordion__art" data-accordion="Перуцци, Бальдассаре">Перуцци, Бальдассаре</button>
+                  <button class="catalog__accordion__art" data-accordion="Пизанелло">Пизанелло</button>
+                  <button class="catalog__accordion__art" data-accordion="Пинтуриккьо">Пинтуриккьо</button>
+                  <button class="catalog__accordion__art" data-accordion="Бергоньоне, Амброджо">Бергоньоне, Амброджо</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catolog__lang-content__item" data-lang-target="gr"></div>
+          <div class="catolog__lang-content__item" data-lang-target="it"></div>
+          <div class="catolog__lang-content__item" data-lang-target="ru"></div>
+          <div class="catolog__lang-content__item" data-lang-target="bg"></div>
+        </div>
+      </div>
+    </section>
+    <section class="events"> 
+      <div class="container events__container"> 
+        <div class="events__heading heading">События </div>
+        <ul class="events__list">
+          <li class="events__item">
+            <div class="events__item__img eii1"></div>
+            <h3 class="events__item__heading">Книжная гравюра в живом восприятии</h3>
+            <p class="events__item__desc">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p><a class="events__item__more" href="#">Подробнее</a><span class="events__item__place">Музей им. Щусева с 20 марта по 30 апреля</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item__img eii2"></div>
+            <h3 class="events__item__heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+            <p class="events__item__desc">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p><a class="events__item__more" href="#">Подробнее</a><span class="events__item__place">ММОМА 24 марта 19:00</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item__img eii3"></div>
+            <h3 class="events__item__heading">Выставка «Формация 2020»</h3>
+            <p class="events__item__desc">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p><a class="events__item__more" href="#">Подробнее</a><span class="events__item__place">Еврейский музей с 31 марта по 21 апреля</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item__img eii4"></div>
+            <h3 class="events__item__heading">XXIV Международная биеннале молодого искусства</h3>
+            <p class="events__item__desc">Внезапно, реплицированные с зарубежных источников, современные исследования.</p><a class="events__item__more" href="#">Подробнее</a><span class="events__item__place">Третьяковка на Крымском валу с 30 марта по 30 апреля</span>
+          </li>
+          <li class="events__item">
+            <div class="events__item__img eii5"></div>
+            <h3 class="events__item__heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+            <p class="events__item__desc">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p><a class="events__item__more" href="#">Подробнее</a><span class="events__item__place">ММАМ с 8 апреля по 20 мая</span>
+          </li>
+        </ul>
+        <button class="events__btn" onclick="toggleEventsMore()">Все события   </button>
+      </div>
+    </section>
+    <section class="editions"> 
+      <div class="container editions__container">
+        <div class="editions__left-group">
+          <h2 class="editions__heading heading">Издания</h2><span class="editions__list-name">Категории</span>
+          <form class="editions__list" action="#">
+            <label class="editions__check" for="editionsCheck1">
+              <input class="visualy_hidden" id="editionsCheck1" type="checkbox"><span></span><strong>Бестселлеры</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck2">
+              <input class="visualy_hidden" id="editionsCheck2" type="checkbox"><span></span><strong>Искусство</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck3">
+              <input class="visualy_hidden" id="editionsCheck3" type="checkbox"><span></span><strong>Архитектура</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck4">
+              <input class="visualy_hidden" id="editionsCheck4" type="checkbox" checked><span></span><strong>Дизайн</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck5">
+              <input class="visualy_hidden" id="editionsCheck5" type="checkbox"><span></span><strong>Мода</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck6">
+              <input class="visualy_hidden" id="editionsCheck6" type="checkbox"><span></span><strong>Детям</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck7">
+              <input class="visualy_hidden" id="editionsCheck7" type="checkbox"><span></span><strong>Художественная литература</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck8">
+              <input class="visualy_hidden" id="editionsCheck8" type="checkbox"><span></span><strong>Публицистика</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck9">
+              <input class="visualy_hidden" id="editionsCheck9" type="checkbox"><span></span><strong>Путеводители</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck10">
+              <input class="visualy_hidden" id="editionsCheck10" type="checkbox"><span></span><strong>Философия</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck11">
+              <input class="visualy_hidden" id="editionsCheck11" type="checkbox"><span></span><strong>Учебная литература</strong>
+            </label>
+            <label class="editions__check" for="editionsCheck12">
+              <input class="visualy_hidden" id="editionsCheck12" type="checkbox"><span></span><strong>Журналы и газеты</strong>
+            </label>
+          </form><span class="editions__price-name">Цена</span>
+          <form class="editions__price" action="#">
+            <label class="editions__price__number" for="editionsNumber1"><span>От</span>
+              <input id="editionsNumber1" type="text" value="50" autocomplete="off">
+            </label>
+            <label class="editions__price__number" for="editionsNumber2"><span>до</span>
+              <input id="editionsNumber2" type="text" value="25 000" autocomplete="off">
+            </label><span class="editions__price__span">руб.</span>
+          </form>
+        </div>
+        <div class="editions__right-group"> 
+          <div class="swiper-container editions__swiper-container"> 
+            <div class="swiper-wrapper editions__swiper-wrapper">
+              <div class="swiper-slide editions__swiper-slide">
+                <div class="editions__swiper-img eb-1"></div>
+                <h3 class="editions__swiper-heading">Искусство цвета</h3>
+                <p class="editions__swiper-desc">Иттен, Иоханнес</p>
+                <button class="editions__swiper-btn">Заказать</button><span class="editions__swiper-price">620 руб</span>
+              </div>
+              <div class="swiper-slide editions__swiper-slide">
+                <div class="editions__swiper-img eb-2"></div>
+                <h3 class="editions__swiper-heading">Типографика</h3>
+                <p class="editions__swiper-desc">Рудер, Эмиль</p>
+                <button class="editions__swiper-btn">Заказать</button><span class="editions__swiper-price">2 450 руб</span>
+              </div>
+              <div class="swiper-slide editions__swiper-slide">
+                <div class="editions__swiper-img eb-3"></div>
+                <h3 class="editions__swiper-heading">Книга про буквы</h3>
+                <p class="editions__swiper-desc">Гордон, Юрий</p>
+                <button class="editions__swiper-btn">Заказать</button><span class="editions__swiper-price">2 200 руб</span>
+              </div>
+              <div class="swiper-slide editions__swiper-slide">
+                <div class="editions__swiper-img eb-4"></div>
+                <h3 class="editions__swiper-heading">Николай Ильин</h3>
+                <p class="editions__swiper-desc">Кричевский, Владимир</p>
+                <button class="editions__swiper-btn">Заказать</button><span class="editions__swiper-price">1 100 руб</span>
+              </div>
+              <div class="swiper-slide editions__swiper-slide">
+                <div class="editions__swiper-img eb-5"></div>
+                <h3 class="editions__swiper-heading">Модульные сетки в граф...</h3>
+                <p class="editions__swiper-desc">Мюллер-Брокманн, Йозеф</p>
+                <button class="editions__swiper-btn">Заказать</button><span class="editions__swiper-price">1 450 руб</span>
+              </div>
+              <div class="swiper-slide editions__swiper-slide">
+                <div class="editions__swiper-img eb-6"></div>
+                <h3 class="editions__swiper-heading">Эволюция графических ст...</h3>
+                <p class="editions__swiper-desc">Хеллер, Чваст</p>
+                <button class="editions__swiper-btn">Заказать</button><span class="editions__swiper-price">3 200 руб</span>
+              </div>
+              <div class="swiper-slide editions__swiper-slide">
+                <div class="editions__swiper-img eb-7"></div>
+                <h3 class="editions__swiper-heading">Искусство и визуальное в...</h3>
+                <p class="editions__swiper-desc">Арнхейм, Рудольф</p>
+                <button class="editions__swiper-btn">Заказать</button><span class="editions__swiper-price">2 200 руб</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev editions__swiper-button-prev"></div>
+          <div class="editions__swiper__count">1 / 3</div>
+          <div class="swiper-button-next editions__swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="projects"> 
+      <div class="container projects__container"> 
+        <h2 class="projects__heading heading">Проекты</h2>
+        <p class="projects__desc desc">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__desc__link" href="https://blanchard-art.ru/projects/about" target="_blank">blanchard-art.ru/projects/about</a></p>
+        <h3 class="projects__swiper-heading">Партнёры проектов:</h3>
+        <div class="projects__swiper">
+          <div class="swiper-container projects__swiper-container"> 
+            <div class="swiper-wrapper projects__swiper-wrapper"> 
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-1"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-2"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-3"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-4"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-5"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-6"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-7"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-8"></div>
+              </div>
+              <div class="swiper-slide projects__swiper-slide">
+                <div class="projects__swiper-slide__img pb-9"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev projects__swiper-button-prev"></div>
+          <div class="swiper-button-next projects__swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts"> 
+      <div class="container contacts__container"> 
+        <h2 class="contacts__heading heading">Контакты</h2>
+      </div>
+      <div class="contacts__content">
+        <div class="contacts__map" id="contactsMap"></div>
+        <div class="contacts__content-form">
+          <h3 class="contacts__place-1">Шоурум №4</h3>
+          <p class="contacts__place-2">Леонтьевский переулок, дом 5/1</p>
+          <h4 class="contacts__name-form">Заказать обратный звонок</h4>
+          <form class="contacts__form" action="#">
+            <input class="contacts__form__input" type="text" placeholder="Имя*" required>
+            <input class="contacts__form__input" type="tel" placeholder="Телефон*" required>
+            <button class="contacts__form__btn" type="sumbit">Заказать</button>
+          </form>
+          <h3 class="contacts__name-soc">Связаться в один клик</h3>
+          <ul class="contacts__soc-list"> 
+            <li class="contacts__soc-item"><a class="contacts__soc-item__link" href="#">
+                <svg> 
+                  <use xlink:href="img/sprite.svg#contacts--wa"></use>
+                </svg></a></li>
+            <li class="contacts__soc-item"><a class="contacts__soc-item__link" href="#">
+                <svg> 
+                  <use xlink:href="img/sprite.svg#contacts--tg"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="container footer__container"><a class="footer__logo" href="#">
+          <svg> 
+            <use xlink:href="img/sprite.svg#footer--logo"></use>
+          </svg></a>
+        <ul class="footer__list"> 
+          <li class="footer__item"><a class="footer__item__link" href="#">
+              <svg> 
+                <use xlink:href="img/sprite.svg#footer--vk"></use>
+              </svg></a></li>
+          <li class="footer__item"><a class="footer__item__link" href="#">
+              <svg> 
+                <use xlink:href="img/sprite.svg#footer--inst"></use>
+              </svg></a></li>
+          <li class="footer__item"><a class="footer__item__link" href="#">
+              <svg> 
+                <use xlink:href="img/sprite.svg#footer--fb"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-1.12.4.js"> </script>
+    <script src="js/jquery-ui.js"> </script>
+    <script src="js/inputmask.min.js"> </script>
+    <script src="js/just-validate.min.js"> </script>
+    <script src="js/choices.min.js"> </script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU"> </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
